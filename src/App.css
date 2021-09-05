@@ -30,7 +30,7 @@ body{
   }
   .search{
     font-family: inherit;
-    color: white;
+    color: black;
     width: 300px;
     padding: 10px;
     border-radius: 10px;
@@ -125,7 +125,6 @@ body{
     }
     .search{
       font-family: inherit;
-      color: white;
       width: 90%;
       margin: auto;
       padding: 10px;
