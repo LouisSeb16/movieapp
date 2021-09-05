@@ -1,0 +1,134 @@
+body{
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #22254b; */
+    color: white;
+    background-color: black;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+  }
+  h3{
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 0px;
+  }
+  p{
+    font-weight: lighter;
+  }
+  header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  header h1{
+    padding: 0.5rem 1.5rem;
+  }
+  header form{
+      height: 50px;
+      padding: 10px;
+      margin-top: 20px;
+  }
+  .search{
+    font-family: inherit;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s ease-in-out;
+  }
+  .movie{
+    width: 235px;
+    height: 430px;
+    margin: 1rem;
+    background-color: black;
+    border-radius: 3px;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  .movie img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  .movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .movie-info h3{
+    margin: 0;
+  }
+  .movie-over p{
+    font-size: 0.9rem;
+  }
+  .movie-over{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: justify;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    overflow: auto;
+    max-height: 100%;
+    transform: translateY(120%);
+    transition: transform 0.4s ease-in-out;
+  }
+  .movie:hover .movie-over{
+    transform: translateY(0%);
+  }
+  .tag{
+    background-color: black;
+    padding: 00.5rem;
+    border-radius: 5px;
+  }
+  .tag.green{
+    color: green;
+    font-weight: bold;
+  }
+  .tag.orange{
+    color: orange;
+    font-weight: bold;
+  }
+  .tag.red{
+    color: red;
+    font-weight: bold;
+  }
+  @media (max-width: 700px) {
+    header{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+    header form{
+        height: 50px;
+        padding: 10px;
+        margin-top: 20px;
+        width: 90%;
+        margin: auto;
+    }
+    header h1{
+        margin: 20px auto;
+    }
+    .search{
+      font-family: inherit;
+      color: white;
+      width: 90%;
+      margin: auto;
+      padding: 10px;
+      border-radius: 50px;
+      background-color: white;
+    }
+  }
